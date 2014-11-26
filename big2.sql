@@ -38,7 +38,7 @@ CREATE TABLE `player` (
 
 LOCK TABLES `player` WRITE;
 /*!40000 ALTER TABLE `player` DISABLE KEYS */;
-INSERT INTO `player` VALUES (0,'PinLiang','GOD','2014-10-11',0),(1,'Hank','GOD2','2014-10-11',1),(2,'Hank1','GOD2','2014-10-11',1);
+INSERT INTO `player` VALUES (0,'PinLiang','GOD','2014-10-11',2),(1,'Hank','GOD2','2014-10-11',2),(2,'Hank1','GOD2','2014-10-11',2),(3,'Hank3','GOD2','2014-11-17',2),(4,'Hank2','GOD2','2014-11-17',1);
 /*!40000 ALTER TABLE `player` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,6 +66,10 @@ CREATE TABLE `tables` (
   `remind3` int(11) DEFAULT NULL,
   `remind4` int(11) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
+  `cards1` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `cards2` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `cards3` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `cards4` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -76,7 +80,7 @@ CREATE TABLE `tables` (
 
 LOCK TABLES `tables` WRITE;
 /*!40000 ALTER TABLE `tables` DISABLE KEYS */;
-INSERT INTO `tables` VALUES (0,'超人桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0),(1,'豬頭桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0),(2,'國王桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0),(3,'測試桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0),(4,'超級大老二','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0),(5,'超級大老二3','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0);
+INSERT INTO `tables` VALUES (0,'超人桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL),(1,'豬頭桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL),(2,'國王桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL),(3,'測試桌','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL),(4,'超級大老二','PinLiang','empty','empty','empty','empty',0,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL),(5,'超級大老二3','PinLiang','Hank1','Hank3','Hank','empty',0,0,0,1,13,13,13,13,1,'s9,d10,c4,c9,s7,c2,d7,s13,h13,c7,d1,h3,d2','d9,s11,s3,h11,c1,h10,s12,s8,s6,d6,s1,c5,s4','d5,s2,d11,d13,c6,s10,c12,c10,c3,c13,d4,h8,h7','d3,d12,d8,h4,h6,h2,h1,h12,c11,s5,h5,h9,c8'),(6,'超級大老二2','PinLiang','empty','empty','empty','empty',1,0,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tables` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,4 +120,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-28 14:09:20
+-- Dump completed on 2014-11-26 17:50:01
